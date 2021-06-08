@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Cabin", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 51px;
+  background-color: #867ae9;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  display: row;
+  max-height: 64px;
+  padding-bottom: 5px;
+}
+.logo img {
+  display: block;
+  width: auto;
+  height: 25px;
+  margin-right: 1px;
+  margin-top: 0px;
+}
+.logo p {
+  font-family: "Cabin", "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.navbar {
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 54px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
