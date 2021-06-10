@@ -1,3 +1,5 @@
+@import "_responsive.scss";
+
 // variable
 $colorperso:#867ae9;
 $textcolor: white;
@@ -21,6 +23,7 @@ html, body {
 
     background-color: #F5F5F5;
 
+    overflow-x: hidden;
 }
 
 // ################################# TOP BAR #############################
@@ -54,7 +57,7 @@ header {
         margin-top: 0px;
     }
 
-    & p {
+    & h1 {
 
         font-family: 'Cabin', 'Roboto', sans-serif;
         font-weight: 500;
@@ -107,16 +110,16 @@ main {
 
     display: flex;
     flex-direction: column;
-    padding-left: 120px;
-    margin: 26px 30px 0 0;
+    margin: 26px 50px 0 0;
 
-    width: 370px;
+    width: 300px;
 
     & div {
 
         display: flex;
         justify-content: baseline;
         align-items: center;
+        margin-left: 57px;
 
     }
 
@@ -169,7 +172,7 @@ main {
     & .publication01 {
 
         width: 970px;
-        height: 898px;
+        height: 896px;
 
         background-color: white;
         border: 2px solid #DBDBDB;
@@ -225,18 +228,18 @@ main {
 
         }
 
-        & .post2-img {
+        & .post-img {
 
             width: 100%;
             height: auto;
 
-            border: 1px solid #DBDBDB;
-            border-radius: 5px;
+            border: 0.5px solid #DBDBDB;
+            border-radius: 2px;
 
         }    
     }
 
-    & .commentaire01 {
+    & .commentaire {
 
         font-size: 14px;
         font-weight: 900;
@@ -253,7 +256,7 @@ main {
         justify-content: space-between;
         
         margin-top: 15px;
-        background: #DBDBDB;
+        background: #dbdbdb4b;
         border: 1px solid #DBDBDB;
         border-radius: 0 0 5px 5px;
 
@@ -332,13 +335,741 @@ main {
 }
 
 // SECOND Publication 
+.article {
+
+    & .publication02 {
+
+        width: 970px;
+        height: 290px;
+
+        background-color: white;
+        border: 2px solid #DBDBDB;
+        border-radius: 5px;
+
+        margin-bottom: 30px;
+
+        & .top-publication {
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 73px;
+
+            & .user-img {
+
+                margin-right: 25px;
+                margin-left: 15px;
+
+            }
+
+            & .user_time {
+
+                font-size: 12px;
+                font-style: italic;
+                font-family: 'Roboto', sans-serif;
+
+                & a {
+
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    font-family: 'Cabin', sans-serif;
+                    margin-bottom: 5px;
+
+                    &:hover {
+
+                        color: $colorperso;
+                        text-decoration: underline;
+
+                    }
+
+                }
+
+                & p {
+
+                    margin: 0;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    & .commentaire {
+
+        font-size: 14px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0 11px 0 15px;
+        line-height: 21.33px;
+        color: rgb(0, 0, 0, 0.6);
+
+    }
+
+    & .likeorcomment {
+
+        display: flex;
+        justify-content: space-between;
+        
+        margin-top: 15px;
+        background: #dbdbdb4b;
+        border: 1px solid #DBDBDB;
+        border-radius: 0 0 5px 5px;
+
+        width: 100%;
+        height: 37px;
+        
+        color: #DBDBDB;
+        font-size: 12px;
+
+        & div {
+
+            display: flex;
+            align-items: baseline;
+            margin: 0 15px 0 15px;
+
+            & a {
+
+                display: block;
+                text-decoration: none;
+                
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+            }
+
+        }
+
+        & .comment {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        
+        & .like {
+
+            display: flex;
+            align-items: center;
+
+        }
 
 
+        & img {
+
+            margin-right: 15px;
+
+            &:hover {
+
+                filter: drop-shadow(0 0 0.75rem $colorperso);
+
+            }
+
+        }
+
+        & .likeitems {
+
+            width: 20px;
+            height: 18px;
+
+        }
+
+        & .commentitems {
+
+            width: 18px;
+            height: 17px;
+
+        }
+
+    }
+
+}
+
+// THIRD Publication
+.article {
+
+    width: 970px;
+    margin: 42px 30px 0 0;
+
+    & .publication03 {
+
+        width: 970px;
+        height: 937px;
+
+        background-color: white;
+        border: 2px solid #DBDBDB;
+        border-radius: 5px;
+
+        margin-bottom: 30px;
+
+        & .top-publication {
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 73px;
+
+            & .user-img {
+
+                margin-right: 25px;
+                margin-left: 15px;
+
+            }
+
+            & .user_time {
+
+                font-size: 12px;
+                font-style: italic;
+                font-family: 'Roboto', sans-serif;
+
+                & a {
+
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    font-family: 'Cabin', sans-serif;
+                    margin-bottom: 5px;
+
+                    &:hover {
+
+                        color: $colorperso;
+                        text-decoration: underline;
+
+                    }
+
+                }
+
+                & p {
+
+                    margin: 0;
+
+                }
+
+            }
+
+        }
+
+        & .post-img {
+
+            width: 100%;
+            height: auto;
+
+            border: 0.5px solid #DBDBDB;
+            border-radius: 2px;
+
+        }    
+    }
+
+    & .commentaire {
+
+        font-size: 14px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0 11px 0 15px;
+        line-height: 21.33px;
+        color: rgb(0, 0, 0, 0.6);
+
+    }
+
+    & .likeorcomment {
+
+        display: flex;
+        justify-content: space-between;
+        
+        margin-top: 15px;
+        background: #dbdbdb4b;
+        border: 1px solid #DBDBDB;
+        border-radius: 0 0 5px 5px;
+
+        width: 100%;
+        height: 37px;
+        
+        color: #DBDBDB;
+        font-size: 12px;
+
+        & div {
+
+            display: flex;
+            align-items: baseline;
+            margin: 0 15px 0 15px;
+
+            & a {
+
+                display: block;
+                text-decoration: none;
+                
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+            }
+
+        }
+
+        & .comment {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        
+        & .like {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+
+        & img {
+
+            margin-right: 15px;
+
+            &:hover {
+
+                filter: drop-shadow(0 0 0.75rem $colorperso);
+
+            }
+
+        }
+
+        & .likeitems {
+
+            width: 20px;
+            height: 18px;
+
+        }
+
+        & .commentitems {
+
+            width: 18px;
+            height: 17px;
+
+        }
+
+    }
+
+}
+
+// article CONFIG adjust
+.article {
+
+    width: 970px;
+    margin: 42px 50px 0 0;
+
+}
 
 
 // Aside 02 RIGHT
+// ASIDE COMMENT
 .aside02 {
 
-    width: 183px;
+    margin: 42px 0 0 0;
+    width: 530px;
+
+    & h2 {
+
+        margin: 0 0 30px 0;
+        width: 130px;
+        padding: 5px 0px;
+        text-align: center;
+
+        background-color: white;
+        border: 2px solid #DBDBDB;
+        border-radius: 5px;
+
+    }
+
+
+    & .publication04 {
+
+        width: 450px;
+        height: 373px;
+
+        background-color: white;
+        border: 2px solid #DBDBDB;
+        border-radius: 5px;
+
+        margin-bottom: 30px;
+
+        & .top-publication {
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 73px;
+
+            & .user-img {
+
+                margin-right: 25px;
+                margin-left: 15px;
+
+            }
+
+            & .user_time {
+
+                font-size: 12px;
+                font-style: italic;
+                font-family: 'Roboto', sans-serif;
+
+                & a {
+
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    font-family: 'Cabin', sans-serif;
+                    margin-bottom: 5px;
+
+                    &:hover {
+
+                        color: $colorperso;
+                        text-decoration: underline;
+
+                    }
+
+                }
+
+                & p {
+
+                    margin: 0;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    & .commentaire {
+
+        font-size: 14px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0 11px 0 15px;
+        line-height: 21.33px;
+        color: rgb(0, 0, 0, 0.6);
+        
+
+    }
+
+    & .likeorcomment {
+
+        display: flex;
+        justify-content: space-between;
+        
+        margin-top: 15px;
+        background: #dbdbdb4b;
+        border: 1px solid #DBDBDB;
+        border-radius: 0 0 5px 5px;
+
+        width: 100%;
+        height: 37px;
+        
+        color: #DBDBDB;
+        font-size: 12px;
+
+        & div {
+
+            display: flex;
+            align-items: baseline;
+            margin: 0 15px 0 15px;
+
+            & a {
+
+                display: block;
+                text-decoration: none;
+                
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+            }
+
+        }
+
+        & .comment {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        
+        & .like {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+
+        & img {
+
+            margin-right: 15px;
+
+            &:hover {
+
+                filter: drop-shadow(0 0 0.75rem $colorperso);
+
+            }
+
+        }
+
+        & .likeitems {
+
+            width: 20px;
+            height: 18px;
+
+        }
+
+        & .commentitems {
+
+            width: 18px;
+            height: 17px;
+
+        }
+
+    }
+
+}
+
+// ASIDE SUGGESTION
+.aside02 {
+
+    & .suggestion {
+
+        display: block;
+
+        & h3 {
+
+            margin: 100px 0 30px 0 ;
+            width: 150px;   
+            font-size: 18px;   
+            
+        }
+
+        hr {
+
+            height: 2px;
+            background-color: black;
+
+        }
+        
+    }
+
+
+       // Friends request
+       & .user-suggestion1 {
+
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-left: 2px;
+
+        & .user_time {
+
+            font-size: 12px;
+            font-style: italic;
+            font-family: 'Roboto', sans-serif;
+
+            & a {
+
+                
+                font-size: 18px;
+                font-weight: 100;
+                text-decoration: none;
+                font-family: 'Cabin', sans-serif;
+                margin-bottom: 5px;
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+
+            }
+
+            &:nth-child(2) {
+
+                font-size: 15px;
+
+            }
+
+        }
+
+        & .user_add a {
+
+            font-size: 15px;
+
+        }
+
+    }
+    & .user-suggestion2 {
+
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-left: 2px;
+
+        & .user_time {
+
+            font-size: 12px;
+            font-style: italic;
+            font-family: 'Roboto', sans-serif;
+
+            & a {
+
+                
+                font-size: 18px;
+                font-weight: 100;
+                text-decoration: none;
+                font-family: 'Cabin', sans-serif;
+                margin-bottom: 5px;
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+
+            }
+
+            &:nth-child(2) {
+
+                font-size: 15px;
+
+            }
+
+        }
+
+        & .user_add a {
+
+            font-size: 15px;
+
+        }
+
+    }
+    & .user-suggestion3 {
+
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-left: 2px;
+
+        & .user_time {
+
+            font-size: 12px;
+            font-style: italic;
+            font-family: 'Roboto', sans-serif;
+
+            & a {
+
+                
+                font-size: 18px;
+                font-weight: 100;
+                text-decoration: none;
+                font-family: 'Cabin', sans-serif;
+                margin-bottom: 5px;
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+
+            }
+
+            &:nth-child(2) {
+
+                font-size: 15px;
+
+            }
+
+        }
+
+        & .user_add a {
+
+            font-size: 15px;
+
+        }
+
+    }
+    & .user-suggestion4 {
+
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-left: 2px;
+
+        & .user_time {
+
+            font-size: 12px;
+            font-style: italic;
+            font-family: 'Roboto', sans-serif;
+
+            & a {
+
+                
+                font-size: 18px;
+                font-weight: 100;
+                text-decoration: none;
+                font-family: 'Cabin', sans-serif;
+                margin-bottom: 5px;
+
+                &:hover {
+
+                    color: $colorperso;
+                    text-decoration: underline;
+
+                }
+
+            }
+
+            &:nth-child(2) {
+
+                font-size: 15px;
+
+            }
+
+        }
+
+        & .user_add a {
+
+            font-size: 15px;
+
+        }
+
+    }
+}
+
+.user-img-suggestion {
+
+    border-radius: 5px;
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+
+    align-self: center;
 
 }
