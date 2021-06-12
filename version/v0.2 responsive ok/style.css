@@ -6407,9 +6407,6 @@ html, body {
   background-color: #F5F5F5;
   overflow-x: hidden;
 }
-html a, body a {
-  color: black;
-}
 
 header {
   display: flex;
